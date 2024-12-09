@@ -6,7 +6,23 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: rgba(128, 128, 128, 0.1); /* Semi-grey background */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body is at least as tall as the viewport */
 }
+
 .custom-bg {
     background-color: rgba(128, 128, 128, 0.1); /* Semi-grey background */
-  }
+}
+
+.container {
+    flex: 1; /* Ensures the main content takes up available space */
+}
+
+footer {
+    margin-top: auto; /* Pushes the footer to the bottom of the page */
+    background-color: #333; /* Dark background for footer */
+    color: white;
+    padding: 1rem 0;
+    width: 100%;
+}
